@@ -1,0 +1,241 @@
+@font-face {
+    font-family: 'PT Sans Caption';
+    src: url('../fonts/PTSans-Caption.woff2') format('woff2'),
+         url('../fonts/PTSans-Caption.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --flex: flex;
+    --space-b: space-between;
+    --none: none;
+    --norm: normal;
+    --cntr: center;
+    --clr-gr: #1FA181;
+    --white: #FFFFFF;
+}
+
+a {
+    text-decoration: var(--none);
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: var(--none);
+}
+
+input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+/*TOP NAV*/
+
+.header {
+    width: 100%;
+}
+
+.header__nav-top {
+    padding: 0 15%;
+}
+
+.nav-top__list {
+    display: var(--flex);
+    align-items: var(--cntr);
+}
+
+.nav-top__item:not(:last-child) {
+    margin-right: 15px;
+}
+
+.social-svg {
+    padding-top: 4px;
+    width: 20px;
+    fill: var(--clr-gr);
+}
+
+.header__link {
+    font-family: 'PT Sans Caption';
+    font-style: var(--norm);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--clr-gr);
+}
+
+/*INFO NAV*/
+
+.header__nav-info {
+    padding: 0 15%;
+    display: var(--flex);
+    align-items: var(--cntr);
+    justify-content: var(--space-b);
+}
+
+.header__wrapper {
+    display: var(--flex);
+    align-items: var(--cntr);
+}
+
+.logo {
+    height: 50px;
+    width: 155px;
+    object-fit: cover;
+}
+.header__block {
+    margin-right: 32px;
+}
+
+.loc-icon {
+    margin-right: 5px;
+}
+
+.location__city {
+    margin: 0;
+    display: var(--flex);
+    align-items: var(--cntr);
+    font-family: 'PT Sans Caption';
+    font-style: var(--norm);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #364844;
+}
+
+.location__street {
+    margin: 0 25px 0;
+    font-family: 'PT Sans Caption';
+    font-style: var(--norm);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #868686;
+}
+
+.num_block {
+    display: var(--flex);
+    align-items: var(--cntr);
+}
+
+.header__number {
+    margin-left: 10px;
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #364844;
+}
+
+.header__btn {
+    padding: 11px 24px;
+    font-family: 'PT Sans Caption';
+    font-style: var(--norm);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--white);
+    background-color: #0DBC91;
+    border-radius: 50px;
+}
+
+/*DOWN NAV*/
+
+.header__nav-down {
+    padding: 0 15%;
+    display: var(--flex);
+    align-items: var(--cntr);
+    justify-content: space-between;
+    background-color: var(--clr-gr);
+}
+
+.header__list {
+    display: var(--flex);
+}
+
+.header__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.header__link__two {
+    font-family: 'PT Sans Caption';
+    font-style: var(--norm);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.header__form_search {
+    padding: 0 14px;
+    height: 35px;
+    width: 195px;
+    display: var(--flex);
+    justify-content: var(--space-b);
+    align-items: var(--cntr);
+    border-radius: 5px;
+    border: 1px solid #9CE3D2
+}
+
+.header__form_search input {
+    width: 160px;
+}
+.header__form_search input::placeholder {
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #BDF3E6;
+}
+
+.header__btn-search {
+    padding: 0;
+    background-color: transparent;
+}
+
+/*HERO*/
+
+.swiper {
+    width: 100%;
+    height: 533px;
+}
+
+.swiper-slide {
+    width: 50%;
+    display: var(--flex);
+}
+
+.slide__article {
+    padding: 140px 0 140px 15%;
+}
+
+.slide__heading {
+    width: 416px;
+}
+
+.slide__text {
+    width: 360px;
+}
+
+.slide__article {
+    width: 50%;
+}
+
+.slide__wrapper {
+    width: 50%;
+    height: 100%;
+    background: no-repeat url(../img/hero_Group.jpg) center / cover;
+}
