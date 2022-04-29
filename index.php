@@ -16,6 +16,7 @@
     <?php include("src/modules/services.php"); ?>
     <?php include("src/modules/ranking.php"); ?>
     <?php include("src/modules/footer.php"); ?>
+    <?php require_once 'connect_db.php'; ?>
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script type="module">
